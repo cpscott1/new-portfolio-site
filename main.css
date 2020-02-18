@@ -45,6 +45,28 @@ ul {
 
 .main-nav ul.menu {
   display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #f2f2f2;
+  width: 50%;
+  height: 100%;
+  border-right: #ccc 1px solid;
+  opacity: 0.9;
+  padding: 1.875rem 0 0 0;
+  transform: translateX(-500px);
+  transition: transform 0.5s ease-in-out;
+}
+.main-nav ul.menu li {
+  padding: 0.625rem;
+  border-bottom: #ccc solid 1px;
+  font-size: 0.875rem;
+}
+.main-nav ul.menu li:last-child {
+  border-bottom: 0;
+}
+.main-nav ul.menu.show {
+  transform: translateX(0);
 }
 
 /*# sourceMappingURL=main.css.map */
